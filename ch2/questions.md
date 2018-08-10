@@ -1,0 +1,5 @@
+- what is an imputer?
+  - it fills in the holes for data that is missing
+- how do we identify strat when building our training and test sets?
+- what is one-hot encoding? What problem does it solve>
+- what does numpy reshape do?

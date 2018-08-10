@@ -8,8 +8,8 @@ build:
 run:
 	docker run -it --rm --hostname $(NAME) --name $(NAME) \
 		-p 8888:8888 \
-		-v $(CURDIR)/data:/usr/local/data \
-		-v $(CURDIR)/..:/usr/local/notebooks \
-		-v $(CURDIR)/root/usr/local/lib/ml:/usr/local/lib/ml \
+		-v $(CURDIR)/data:/usr/local/ml/data \
+		-v $(CURDIR)/..:/usr/local/ml/notebooks \
+		-v $(CURDIR)/../..:/usr/local/dev \
 		-v $(HOME)/.kaggle:/root/.kaggle \
 		$(IMAGE):$(VERSION)
